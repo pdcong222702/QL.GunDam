@@ -3,12 +3,15 @@ import { createBrowserRouter } from 'react-router-dom';
 // import LoginPage from '@/features/auth/pages/LoginPage';
 
 export const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     // element: ,
-//   },
-//   {
-//     path: '/login',
-//     element: <LoginPage />,
-//   },
+  {
+    path: '/',
+    lazy: () => import('./layouts/MainLayout'),
+    children: [
+        { 
+            index: true, 
+            lazy: () => import('./modules/home') 
+        },
+    ]
+   
+  },
 ]);
