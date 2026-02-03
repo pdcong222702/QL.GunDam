@@ -5,13 +5,23 @@ import { createBrowserRouter } from 'react-router-dom';
 export const router = createBrowserRouter([
   {
     path: '/',
-    lazy: () => import('./layouts/MainLayout'),
+    lazy: async () => {
+      const { default: MainLayout } = await import('./layouts/MainLayout');
+
+      return {
+        Component: MainLayout,
+      };
+    },
     children: [
-        { 
-            index: true, 
-            lazy: () => import('./modules/home') 
-        },
+      {
+        index: true,
+        lazy: () => import('./modules/home')
+      },
+      {
+        path: 'admin/nguoi-dung/*',
+        lazy: () => import('./modules/admin.nguoi_dung')
+      }
     ]
-   
+
   },
 ]);

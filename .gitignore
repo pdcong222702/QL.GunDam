@@ -65,3 +65,83 @@ coverage/
 # Misc
 # ======================
 *.log
+
+##############################
+# .NET / C#
+##############################
+
+# Build results
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Dotnet tools
+.dotnet/
+.dotnet-tools.json
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+
+# Secrets
+secrets.json
+*.pfx
+*.snk
+
+# User-specific files
+*.rsuser
+*.userprefs
+
+# Logs
+*.log
+logs/
+
+# Publish
+publish/
+wwwroot/
+
+# Entity Framework
+Migrations/*.cs
+!Migrations/*Initial*.cs
+*.db
+*.sqlite
+
+# Test results
+TestResults/
+
+# Packages
+packages/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+.nuget/packages/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+**/docker-compose.override.yml
+
+# Node (nếu có frontend chung repo)
+node_modules/
+dist/
+build/

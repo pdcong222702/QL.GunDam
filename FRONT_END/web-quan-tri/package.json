@@ -11,17 +11,23 @@
     "format": "prettier --write src"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.1.0",
     "@iconify/react": "^6.0.2",
     "@reduxjs/toolkit": "^2.11.2",
     "antd": "^6.2.3",
     "axios": "^1.13.4",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.19",
+    "jwt-decode": "^4.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.13.0",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "rxjs": "^7.8.2",
+    "sass": "^1.97.3",
+    "store": "^2.0.12",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
