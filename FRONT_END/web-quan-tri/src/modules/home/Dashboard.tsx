@@ -1,5 +1,10 @@
-export function Dashboard(){
+import { Space } from "antd";
+
+
+export function Dashboard() {
     return (
-        <div>Dashboard Page</div>
+        <Space>
+
+        </Space>
     )
 }
