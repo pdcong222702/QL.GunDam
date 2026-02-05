@@ -1,4 +1,5 @@
-﻿using BusinessLogic.Interfaces.IDbContext;
+﻿using BaseInfrastructure;
+using BusinessLogic.Interfaces.IDbContext;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +12,7 @@ namespace Infrastructure
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, string connectionString)
         {
             // Add infrastructure services here
+            services.AddInfrastructureServices();
             services.AddDbContext<AdminDbContext>(builder =>
             {
                 builder.UseSqlServer(connectionString, sql =>

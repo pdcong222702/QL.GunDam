@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using BaseDomain.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Entities.NguoiDung
 {
     [Table("nguoi_dung", Schema = "admin")]
-    public partial class nguoi_dung : Domain.Entities.BaseAudiTableEntity.BaseAudiTableEntity
+    public partial class nguoi_dung : BaseTableEntity
     {
         [Column("TAI_KHOAN")]
         public string tai_khoan { get; set; }

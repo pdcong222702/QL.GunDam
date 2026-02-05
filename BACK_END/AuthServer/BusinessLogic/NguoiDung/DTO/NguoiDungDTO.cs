@@ -9,7 +9,6 @@ namespace BusinessLogic.NguoiDung.DTO
         public Guid ID { get; set; }
         public string tai_khoan { get; set; }
         public string mat_khau { get; set; }
-        public string salt_code { get; set; }
         public string ten { get; set; }
         public string? email { get; set; }
         public string? so_dien_thoai { get; set; }

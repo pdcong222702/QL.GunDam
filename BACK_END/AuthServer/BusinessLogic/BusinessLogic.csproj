@@ -8,21 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EPS.BaseApplicationCongPD" Version="1.0.0" />
+    <PackageReference Include="EPS.BaseApplicationCongPD" Version="1.0.6" />
     <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="MediatR" Version="12.5.0" />
-    <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" Version="5.1.0" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.23" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NguoiDung\Commands\" />
-    <Folder Include="NguoiDung\Queries\" />
   </ItemGroup>
 
 </Project>

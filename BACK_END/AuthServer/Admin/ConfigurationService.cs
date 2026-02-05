@@ -1,6 +1,6 @@
-﻿using BusinessLogic;
+﻿using BaseApi;
+using BusinessLogic;
 using Infrastructure;
-using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 
 namespace Admin
@@ -12,6 +12,7 @@ namespace Admin
             // Add admin services here
             // Add Infrastructure services
             var connectionStr = configuration.GetConnectionString("default");
+            services.AddBaseApiServices();
             services.AddBusinessLogicConfigurationService();
             services.AddInfrastructureServices(connectionStr);
             services.AddControllers();
